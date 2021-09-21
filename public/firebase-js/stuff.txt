@@ -1,0 +1,43 @@
+if (
+    firstName === "" ||
+    lastName === "" ||
+    email === "" ||
+    phone === "" ||
+    password === ""
+  ) {
+    message = `
+    <div style="
+    height: 60px;
+    width: 100%;
+    margin: 20px 0;
+    padding: 1rem;
+    color: #842029;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+
+    ">
+      No field can be left blank. Please make sure you fill all the available fields to proceed.
+    </div>
+    `;
+  } else if (password !== confirm_password) {
+    message = `
+    <div style="
+    height: 60px;
+    width: 100%;
+    margin: 20px 0;
+    padding: 1rem;
+    color: #842029;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+
+    ">
+      Passwords do not match. Please try again.
+    </div>
+    `;
+  } else {
